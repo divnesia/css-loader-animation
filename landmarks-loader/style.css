@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #002030;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -4rem;
+  margin-left: -4rem;
+  width: 8rem;
+  height: 8rem;
+  background-image: url('./icon/001-pantheon.svg');
+  animation: switch 10s infinite;
+}
+
+.load-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 6rem;
+  margin-left: -3.45rem;
+  font-size: 1.8rem;
+  color: #e8c870;
+}
+
+@keyframes switch {
+  5% {
+    background-image: url('./icon/002-pyramids.svg');
+  }
+  10% {
+    background-image: url('./icon/004-stonehenge.svg');
+  }
+  15% {
+    background-image: url('./icon/007-pagoda.svg');
+  }
+  20% {
+    background-image: url('./icon/009-monas.svg');
+  }
+  25% {
+    background-image: url('./icon/010-big-ben.svg');
+  }
+  30% {
+    background-image: url('./icon/012-leaning-tower-of-pisa.svg');
+  }
+  35% {
+    background-image: url('./icon/013-sphinx.svg');
+  }
+  40% {
+    background-image: url('./icon/014-mayan-pyramid.svg');
+  }
+  45% {
+    background-image: url('./icon/016-louvre.svg');
+  }
+  50% {
+    background-image: url('./icon/022-borobudur.svg');
+  }
+  55% {
+    background-image: url('./icon/023-statue-of-liberty.svg');
+  }
+  60% {
+    background-image: url('./icon/024-thirteen-tombs-of-the-ming-dynasty.svg');
+  }
+  65% {
+    background-image: url('./icon/030-petronas-twin-tower.svg');
+  }
+  70% {
+    background-image: url('./icon/031-arc-de-triomphe.svg');
+  }
+  75% {
+    background-image: url('./icon/033-burj-al-arab.svg');
+  }
+  80% {
+    background-image: url('./icon/035-brandenburg-gate.svg');
+  }
+  85% {
+    background-image: url('./icon/036-tower-bridge.svg');
+  }
+  90% {
+    background-image: url('./icon/037-alcala-gate.svg');
+  }
+  95% {
+    background-image: url('./icon/038-id-kah-mosque.svg');
+  }
+  100% {
+    background-image: url('./icon/001-pantheon.svg');
+  }
+}
