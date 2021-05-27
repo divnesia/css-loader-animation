@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #002030;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5rem;
+  width: 3rem;
+  height: 5rem;
+  background-color: #e8c870;
+  border: 0.2rem solid #fff;
+  border-radius: 10%;
+  animation: reveal 1s forwards;
+}
+
+.l-card {
+  margin-left: -12rem;
+  animation-delay: 500ms;
+}
+
+.o-card {
+  margin-left: -8.5rem;
+  animation-delay: 1s;
+}
+
+.a-card {
+  margin-left: -5rem;
+  animation-delay: 1.5s;
+}
+
+.d-card {
+  margin-left: -1.5rem;
+  animation-delay: 2s;
+}
+
+.i-card {
+  margin-left: 2rem;
+  animation-delay: 2.5s;
+}
+
+.n-card {
+  margin-left: 5.5rem;
+  animation-delay: 3s;
+}
+
+.g-card {
+  margin-left: 9rem;
+  animation-delay: 3.5s;
+}
+
+.word {
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  margin-top: -.8rem;
+  margin-left: -.5rem;
+  font-size: 1.6rem;
+  color: #002030;
+  transform: scaleX(-1);
+  animation: word 1s forwards;
+}
+
+.l-word {
+  animation-delay: 750ms;
+}
+
+.o-word {
+  animation-delay: 1.25s;
+}
+
+.a-word {
+  animation-delay: 1.75s;
+}
+
+.d-word {
+  animation-delay: 2.25s;
+}
+
+.i-word {
+  animation-delay: 2.75s;
+}
+
+.n-word {
+  animation-delay: 3.25s;
+}
+
+.g-word {
+  animation-delay: 3.75s;
+}
+
+@keyframes reveal {
+  100% {
+    background-color: #fff;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes word {
+  100% {
+    visibility: visible;
+  }
+}
